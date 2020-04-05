@@ -1,0 +1,146 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../iconfont/iconfont.woff2') format('woff2'),
+        url('../iconfont/iconfont.woff') format('woff'),
+        url('../iconfont/iconfont.ttf') format('truetype'),
+        url('../iconfont/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialias ed;
+    -moz-osx-font-smoothing: grayscale;
+  }
+/* #loginpage {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+#loginpage .login{
+    width:533px ;
+    height: 380px;
+    border: 1px solid #9c9c9c;
+    margin: auto;
+    position: relative;
+   
+}
+#loginpage .login .top{
+    height:156px;
+    background-image: url(../image/pic1.jpg);
+   
+}
+/* 顶栏 */
+#loginpage .login .top .first{
+    color: #fff;
+    padding-top: 13px;
+    line-height: 25px;
+    cursor: pointer;
+}
+#loginpage .login .top .big{
+    font-size: 25px;
+    margin:0 0px 0px 14px;  
+}
+#loginpage .login .top .first i{
+    display: inline-block;
+    font-size: 21px;
+    margin:0 0 7px 9px ;
+}
+#loginpage .login .top .first .frbtn{
+    font-size: 16px;
+    line-height: 16px;
+}
+#loginpage .login .top .first .frbtn span{
+    padding:0 6px ;
+}
+/* 账号登录 */
+#loginpage .input{
+    width: 302px;
+    height: 115px;
+    padding: 16px 115px 0 115px;
+}
+#loginpage .input .inputaccount{
+    height: 33px;
+    width: 302px;
+    padding-bottom: 3px;
+    margin-bottom: 9px;
+    border-bottom: 1px solid rgb(4, 204, 240);
+    position: relative;
+}
+#loginpage .input .inputaccount input{
+    border: none;
+    height: 33px;
+    width: 282px;
+    outline: none;
+    padding-left:20px;
+    padding-right: 20px;
+}
+#loginpage .input .inputaccount span{
+    font-size: 17px;
+    line-height: 33px;
+    color: rgb(5, 177, 245);
+    position: absolute;
+}
+#loginpage .input .inputaccount .select{
+    right: 0px;
+    top: -0px;
+    color: #9c9c9c;
+    position: absolute;
+    cursor: pointer;
+}
+/* 密码 */
+#loginpage .input .inputpassword{
+    height: 33px;
+    width: 302px;
+    padding-bottom: 3px;
+    margin-bottom: 9px;
+    border-bottom: 1px solid rgb(4, 204, 240);
+    position: relative;
+}
+#loginpage .input .inputpassword input{
+    border: none;
+    height: 33px;
+    width: 282px;
+    outline: none;
+    padding-left:20px;
+    padding-right: 20px;
+}
+#loginpage .input .inputpassword span{
+    font-size: 17px;
+    line-height: 33px;
+    color:#9c9c9c;
+    position: absolute;
+}
+#loginpage .input .inputpassword .jp{
+    right: 0px;
+    top: -0px; 
+    position: absolute;
+    cursor: pointer;
+}
+/* 复选框 */
+#loginpage .input .selectbox ul li{
+    float: left;
+    padding-right: 39px;
+    font-size: 15px;
+}
+#loginpage .input .selectbox a{
+    color: #9c9c9c;
+}
+#loginpage .input .selectbox .find{
+    padding-right: 0;
+}
+/* 登录按钮 */
+#loginpage .input .loginbtn button{
+    margin-top: 20px;
+    border:none;
+    width: 299px;
+    height: 46px;
+    background-color:rgb(4, 204, 240) ;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+}
