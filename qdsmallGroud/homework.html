@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<META charset="UTF-8">
+<title>QQ登录页面</title>
+<link rel="stylesheet" href="css/dl.css">
+<link rel="stylesheet" href="css/dl1.css">
+<link rel="icon" href="qq_1.ico"/>
+
+<script type="text/javascript">
+    function check()
+    {
+        flag=true;
+        var account=document.getElementById("lg_account").value;
+        var password=document.getElementById("lg_password").value;
+        if(account==""){    
+            flag=false;
+            alert("帐号不能为空");
+        }
+        else if(account==" "){
+            flag=false;
+            alert("账号中不能有空格");
+        }
+        else if(account.length>11)  {
+            flag=false;
+            alert("账号输入错误，请重新输入");
+        }
+        if(password==" "){
+            flag=false;
+            alert("密码输入错误");
+        }
+        else if(password.length<1)
+        {
+            flag=false;
+            alert("密码不能为空");
+        }
+        else{
+            flag=true;
+            alert("success");
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="loginpage">
+        <div class="login">
+            <div class="top">
+                <div class="first">
+                    <span class="big iconfont fl">&#xe615;</span>
+                    <i class="fl">QQ</i>
+                    <div class="frbtn iconfont fr">
+                        <span>&#xe502;</span>
+                        <span>&#xe65e;</span>
+                        <span>&#xe617;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="input clearfix">
+                <form id="form1" name="form1" method="get" action="" onsubmit="return check();">
+                    <div class="inputaccount">
+                        <span class="QQ iconfont">&#xe615;</span>
+                        <input id="lg_account" class="iconfont" type="text" name="lg_account" placeholder="请输入您的昵称"/>
+                        <span class="select iconfont">&#xe60b;</span>
+                    </div>
+                    <div class="inputpassword">
+                        <span class="iconfont">&#xe507;</span>
+                        <input id="lg_password" class="iconfont" type="password" name="lg_password" placeholder="请输入您的密码"/> 
+                        <span class="jp iconfont">&#xe616;</span>
+                    </div>
+                    <div class="selectbox">
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="login" value="autologin">自动登录<br/>
+                            </li>
+                            <li>
+                                <input type="checkbox" name="password" value="remember">记住密码<br/>
+                            </li>
+                            <li class="find">
+                                <a href="#">找回密码</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="loginbtn clearfix" >
+                        <button  type="submit" id="lg">登录</button>
+                    </div>
+                </form>
+            </div>
+            <div class="SignUp">
+                <div class="signUpWord fl">
+                    <a href="signup.html">注册账号</a>
+                </div>
+                <div class="code">
+                    <span class="iconfont fr">&#xe646;</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type = "text/javascript" src="js/ajax1.js"></script>
+</body>
+</html>
