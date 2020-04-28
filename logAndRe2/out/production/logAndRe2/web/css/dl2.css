@@ -1,0 +1,248 @@
+@font-face {
+    font-family: 'iconfont';
+    src: url('../iconfont/iconfont.eot');
+    src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+        url('../iconfont/iconfont.woff2') format('woff2'),
+        url('../iconfont/iconfont.woff') format('woff'),
+        url('../iconfont/iconfont.ttf') format('truetype'),
+        url('../iconfont/iconfont.svg#iconfont') format('svg');
+  }
+  .iconfont {
+    font-family: "iconfont" !important;
+    font-size: 12px;
+    font-style: normal;
+    -webkit-font-smoothing: antialias ed;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  #signup{
+    display: flex;
+    justify-content: space-between;
+    width: 1520px;
+    height:auto ;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #signup .left{
+    background-image: url(../image/01-4.jpg);
+    width: 480px;
+    height: 810px;
+    margin: 0;
+  }
+  #signup .right{
+    width: auto;
+    height: auto;
+  }
+  #signup .left .logo{
+    
+    margin-top: 18px;
+    margin-left: 30px;
+    font-size: 36px;
+    top:0;
+    left: 0;
+    background-size: 36px,43px;
+    height: 48px;
+    line-height:48px;
+    width: 120px;
+    padding: 0;
+  }
+  #signup .left .logo img{
+    padding-right: 8px;
+  }
+#signup .signup{
+  width: 1039px;
+  height: 790px;
+}
+#signup .signup .top{
+  text-align: right;
+}
+#signup .signup .top .item{
+  float: right;
+  margin: 20px 40px 0 0;
+  padding-top: 10px;
+  font-size: 16px;
+  line-height: 24px;
+}
+#signup .signup .top .QQ{
+  padding: 0;
+}
+#signup .signup .top .QQ a{
+  display: block;
+  position: relative; 
+  padding: 0;
+  
+}
+#signup .signup .top .QQ a img{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+#signup .signup .top .QQ a div{
+  border-radius: 6px;
+  line-height: 24px;
+  height: 24px;
+  margin: 10px 0 0 5px;
+  padding: 0 10px 0 24px;
+  color: #fff;
+  background: linear-gradient(126deg,#fc4754,#ff794c) #f54444;
+}
+#signup .top .Chinese span{
+  font-size: 16px;
+  color:#000000 ;
+}
+#signup .signup .center{
+  position: relative;
+  top: 100px;
+}
+#signup .signup .centerpart{
+  width: 480px;
+  margin: 0 auto;
+}
+#signup .signup .centerword .welcome{
+  font-size: 44px;
+  margin-bottom: 20px;
+  color: #333;
+}
+#signup .signup .centerpart .freeaccount{
+  float: right;
+}
+#signup .signup .centerpart .freeaccount a{
+  font-size: 24px;
+  color:#359eff ;
+  line-height: 24px;
+
+}
+#signup .signup .centerpart .everyday{
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 64px;
+  color: #333;
+}
+#signup .form .inputname {
+  margin:32px 0;
+ 
+}
+#signup .form .inputname input{
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 20px;
+  width: 438px;
+  height: 50px;
+  line-height: 50px;
+  padding:0 20px;
+}
+
+#signup .form .password {
+  margin-bottom: 32px;
+}
+#signup .form .password input{
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 20px;
+  width: 438px;
+  height: 50px;
+  line-height: 50px;
+  padding:0 20px;
+}
+#signup .form .email {
+  margin-bottom: 32px;
+}
+#signup .form .email input{
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  text-align: left;
+  font-size: 20px;
+  width: 438px;
+  height: 50px;
+  line-height: 50px;
+  padding:0 20px;
+}
+#signup .form .phone .number input {
+  float: right;
+  border: none;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 20px;
+  width: 265px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+
+#signup .form .phone .add input{
+  border: none;
+  
+  font-size: 20px;
+  width: 94px;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 20px;
+}
+#signup .form .phone .add span{
+  /* left: -20px; */
+}
+#signup .form .phone .add{
+  border: 1px solid #aaa;
+  width: 154px;
+  border-radius: 4px;
+}
+#signup .ps i{
+  display: inline-block;
+  font-size: 14px;
+  height: 14px;
+  color: #999;
+}
+#signup .signupbtn{
+  margin-top: 54px;
+  margin-bottom: 24px;
+}
+#signup .signupbtn button{
+  border: none;
+  border: 1px #3083ff solid;
+  border-radius: 4px;
+  background-color: #359eff;
+  background-image: linear-gradient(0deg,#398bff,#3083ff);
+  text-align: center;
+  color: #fff;
+  width: 478px;
+  height: 60px;
+  font-size: 24px;
+  cursor: pointer;
+}
+#signup .agree{
+  /* height: 13px; */
+  position: relative;
+}
+#signup .agree input{
+  margin: 0;
+  position: absolute;
+  bottom: 2px;
+}
+#signup .agree input i{
+  height: 13px;
+  line-height: 13px;
+  font-size: 13px;
+
+}
+#signup .foot{
+  width: 480px;
+  margin: 0 auto;
+}
+#signup .foot i{
+  display: inline-block;
+  font-size: 14px;
+  color: #bbb;
+  text-align: center;
+  font-weight: lighter;
+  margin-top: 30px;
+  width: 480px;
+}
+#signup .agree a{
+  font-size: 12px;
+  color: #bbb;
+  cursor: pointer;
+} 

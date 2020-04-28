@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <META charset="UTF-8">
+<title>QQ注册页面</title>
+<link rel="stylesheet" href="css/dl2.css">
+<link rel="stylesheet" href="css/dl.css">
+<!--<meta charset="utf-8">-->
+<link rel="icon" href="image/qq_1.ico">
+<script type="text/javascript">
+    function signup()
+    {
+        flag=true;
+        var username=document.getElementById("username").value;
+        var password=document.getElementById("password").value;
+        var phone=document.getElementById("phone").value;
+        var email=document.getElementById("email").value;
+        if(username==""){
+            flag=false;
+            alert("昵称不能为空");      
+        }
+        else if(password==""||password==" "){
+            flag=false;
+            alert("密码输入不符合格式");
+        }
+        else if(phone==""){
+            flag=false;
+            alert("手机号码不得为空");
+        }
+        else if(email==""||email==" "){
+            flag=false;
+            alert("邮箱输入错误");
+        }
+        else if(phone==" "){
+            flag=false;
+            alert("手机号码不得有空格");
+        }
+        // else if(number>12){
+        //     flag=false;
+        //     alert("手机号码输入错误");
+        // }
+        else{
+            flag=true;
+            alert("success");
+        }
+    }
+</script>
+</head>
+<body>
+    <div id="signup">
+        <div class="left">
+            <a href="#" class="logo"><img src="image/logo.png">QQ</a>
+            <!-- <div class="pic">
+                <img src="../image/01-4.jpg" alt="">
+            </div> -->
+        </div>
+        <div class="signup">
+            <div class="top">
+                <div class="item advise">
+                    <a href="#">意见反馈</a>
+                </div>
+                <div class="item Chinese">
+                    <span class="iconfont">简体中文&#xe6bb;</span>
+                </div>
+                <div class="item QQ clearfix">
+                    <a class="niceaccount clearfix" href="#">
+                        <div>QQ靓号</div>
+                        <img src="image/logo3.png"  alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="center">
+                <div class="centerpart">
+                    <div class="centerword">
+                        <div class="welcome">欢迎注册QQ</div>
+                        <div class="freeaccount">
+                            <a href="#">免费靓号</a>
+                        </div>
+                        <div class="everyday">每一天，乐在沟通。</div>
+                    </div>
+                    <div class="form">
+                        <form name="form1" id="form1" action="regist" onsubmit="return register();" method="post">
+                            <div class="inputname">  
+                                <input type="text" id="username" name="username" placeholder="昵称">
+                            </div>
+                            <div class="password">
+                                <input type="password" id="password" name="password" placeholder="密码">
+                            </div>  
+                            <div class="email">
+                                <input type="text" id="email" name="email" placeholder="邮箱">
+                            </div>  
+                            <div class="phone">
+                                <div class="number">
+                                    <input type="text" id="phone" name="phone" placeholder="手机号码">
+                                </div>
+                                <div class="add">
+                                    <input type="text" id="re_add" name="re_add" placeholder="+86">
+                                    <span class="iconfont">&#xe6bb;</span>
+                                </div>
+                            </div>
+                            <div class="ps">
+                                <i>可通过手机号找回密码</i>
+                            </div>
+                            <div class="signupbtn" >
+                                <button type="submit" id="re">立即注册</button>
+                            </div>
+<!--                            <script type = "text/javascript" src="js/ajax.js"></script>-->
+                            <div class="agree iconfont">
+                                <input type="checkbox" name="agree" value="agree"><i>我已阅读并同意相关服务条款和隐私政策&#xe6bb;</i>
+                                <a href="login.html" class="fr">返回登陆</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="foot">
+                    <i>Copyright © 1998-2020Tencent All Rights Reserved</i>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+</body>
+</html>
